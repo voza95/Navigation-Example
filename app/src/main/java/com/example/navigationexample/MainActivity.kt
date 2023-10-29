@@ -40,7 +40,7 @@ fun App() {
                 type = NavType.StringType
             }
         )) {
-            val email = it.arguments!!.getString("email")
+            val email = it.arguments?.getString("email") ?: ""
             MainScreen(email)
         }
     }
