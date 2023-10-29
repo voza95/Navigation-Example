@@ -7,3 +7,12 @@ The main navigation approach in Jetpack compose.
 4. Using a composition local of jetpack compose
 5. Using persistent storage
 
+Navigation arguments advantages:
+* Simple implementation
+* Values passed in NavArgment will survive process dead by default.
+
+Navigation arguments disadvantages:
+* Not suitable to share complex data
+* Not convenient for sharing data between multiple screens
+* Passed value will be stateless and cannot be change dynamically 
+
